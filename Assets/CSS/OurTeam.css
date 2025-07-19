@@ -1,7 +1,6 @@
 body {
     background: url('../Images/EwingLawMainBG.svg') no-repeat center center fixed;
     background-size: cover;
-    cursor: url('../Icons/EwingCursor.svg'), auto;
 }
 
 .hero-section {
