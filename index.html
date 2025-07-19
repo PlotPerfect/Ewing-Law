@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewing Law</title>
+    <link rel="stylesheet" href="Assets/CSS/index.css">
+    <link rel="stylesheet" href="Assets/CSS/qr-contact.css">
+    <link rel="stylesheet" href="Assets/Mobile CSS/index-mob.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="Assets/Icons/ELFavicon.svg">
+    <meta name="description" content="Ewing Law is a leading criminal defence law firm in Westminster, London, specialising in serious and complex crime, white collar crime, regulatory law, and private client legal services. Expert solicitors for high-profile cases and professional regulation.">
+    <meta name="keywords" content="criminal defence, law firm, Westminster, London, serious crime, complex crime, white collar crime, regulatory law, private client, solicitors, legal services, professional regulation, fraud defence, motoring offences, advisory services, SRA regulated">
+    <link rel="canonical" href="https://www.ewinglaw.co.uk/">
+    <meta property="og:title" content="Ewing Law | Leading Criminal Defence Solicitors in London">
+    <meta property="og:description" content="Specialist criminal defence law firm in Westminster, London. Private client solicitors for serious crime, white collar crime, and regulatory law.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ewinglaw.co.uk/">
+    <meta property="og:image" content="https://www.ewinglaw.co.uk/Assets/Images/Ewing%20Law%20Logo.svg">
+</head>
+<body>
+    <div id="side-menu" class="side-menu">
+        <nav class="side-menu-nav">
+            <button class="side-menu-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="side-menu-btn" onclick="window.location.href='WhatMakesUsUnique.html'">What Makes us Unique</button>
+            <button class="side-menu-btn" onclick="document.querySelector('.Expertise-Section').scrollIntoView({ behavior: 'smooth' });">Services</button>
+            <button class="side-menu-btn" onclick="window.location.href='OurTeam.html'">Team</button>
+            <button class="side-menu-btn" onclick="window.location.href='Contact.html'">Contact Us</button>
+            <button class="side-menu-btn" onclick="window.location.href='blogs.html'">Blogs</button>
+
+        </nav>
+    </div>
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>A criminal investigation can happen to anyone. When it does it can be life-changing. Ewing Law is dedicated to reducing that burden by providing a committed, experienced and expert team of carefully selected lawyers, all focused on achieving the best possible result.</h1>
+            <p>Ewing Law is renowned as a leading private law firm specialising in the defence of serious and complex criminal prosecutions and professional regulation. Based in Westminster, we accept instruction from private clients in all criminal and regulatory matters.</p>
+        </div>
+        <img src="Assets/Icons/MenuClosed.svg" alt="Menu Closed" id="menu-icon" class="menu-icon">
+        <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo" class="ewing-law-logo">
+        <img src="Assets/Icons/ContactIconClosed.svg" alt="Contact Icon Closed" id="contact-icon" class="contact-icon">    
+    </section>
+
+    <div class="unique-btn-container">
+        <button class="unique-btn">
+            <span class="unique-btn-line"></span>
+            <span class="unique-btn-text" onclick="window.location.href='WhatMakesUsUnique.html'" style="cursor:pointer;">FIND OUT WHAT MAKES US UNIQUE</span>
+        </button>
+        <button class="down-arrow-btn" id="scroll-down-btn" aria-label="Scroll to next section">
+            <img src="Assets/Icons/DownArrowIcon.svg" alt="Scroll Down" class="down-arrow-icon">
+        </button>
+    </div>
+    <section class="Expertise-Section next-section">
+        <div class="expertise-label">EXPERTISE</div>
+        <div class="expertise-main">
+            Ewing Law acts for the defence in all high-profile, serious and complex criminal cases on a private funded basis. These include but are not limited to allegations of fraud, offences under the Proceeds of Crime Act 2002 and other serious financial crimes (aka white collar crime) and Serious Crime (e.g. murder, drug importation, blackmail, sexual assaults, robbery).
+        </div>
+        <div class="expertise-columns">
+            <div class="expertise-col">
+                In addition we accept private instruction in respect of any proceedings before the criminal courts, including motoring offences, offences before the Magistrates Courts, allegations of General Crime before the Crown Court, cash forfeiture, and prosecutions by non-CPS agencies such as HM Revenue and Customs, the Serious Fraud Office, the Trading Standards Agency and the various environmental crime agencies.
+            </div>
+            <div class="expertise-col">
+                We frequently appear before professional disciplinary bodies – including but not limited to sporting bodies and panels regulating the medical professions – on behalf of private clients accused of compliance or regulatory breach.<br><br>
+                We also offer expertise and advice to private clients, companies and institutions in respect of any proposed professional conduct and its compliance with any relevant governing regulation.
+            </div>
+        </div>
+        <div class="expertise-note">
+            <em>For more information on any specific area of expertise, please click the link below:</em>
+        </div>
+        <div class="expertise-buttons-grid">
+            <button class="expertise-btn" data-overlay="serious-complex">
+                <span class="expertise-btn-content">SERIOUS/COMPLEX CRIMES</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+            <button class="expertise-btn" data-overlay="white-collar">
+                <span class="expertise-btn-content">WHITE COLLAR CRIME</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+            <button class="expertise-btn" data-overlay="general-crime">
+                <span class="expertise-btn-content">PRIVATE CLIENT<br>- GENERAL CRIME</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+            <button class="expertise-btn" data-overlay="motoring-offences">
+                <span class="expertise-btn-content">PRIVATE CLIENT<br>- MOTORING OFFENCES</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+            <button class="expertise-btn" data-overlay="regulatory-discipline">
+                <span class="expertise-btn-content">PRIVATE CLIENT<br>- REGULATORY OFFENCES / DISCIPLINE</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+            <button class="expertise-btn" data-overlay="advisory">
+                <span class="expertise-btn-content">PRIVATE CLIENT<br>- ADVISORY</span>
+                <span class="expertise-btn-arrow">
+                  <svg viewBox="0 0 16 16"><polygon points="0,0 16,0 16,16"/></svg>
+                </span>
+            </button>
+        </div>
+        <!-- Overlays for each expertise button -->
+        <div class="expertise-overlay" id="overlay-serious-complex">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>Serious &amp; Complex Crimes Defence</h1>
+                    <p><strong>Frequently instructed to defend in major, nationally reported criminal trials, Ewing Law is a recognised leader when it comes to serious/complex crime.</strong></p>
+                    <p>With the experience and expertise to deliver in even the most serious, complex and high profile of criminal cases, our practice ranges from murder to large scale drug conspiracies, and from kidnap, blackmail and armed robberies to allegations of a sexual nature, particularly those within the media and sporting sectors. In addition we have a particular and much sought after expertise in the fields of corruption, bribery and money laundering.</p>
+                    <p>With decades of experience to call upon, our team members have been instructed to defend in cases brought by all of the major UK prosecuting bodies, including but not limited to the Crown Prosecution Service, the CPS Special Case Work Unit, The National Crime Agency, the Serious Fraud Office, Her Majesty’s Insolvency Service, the Health and Safety Executive, the Department of Work and Pensions, the Financial Conduct Authority and more. This wealth of experience makes Ewing Law the logical choice for any individual or company subject to investigation by any prosecuting body within the United Kingdom.</p>
+                    <p>We are regularly instructed to defend nationwide, with our reputation in this area of law taking us from London to Newcastle and everywhere in between. In addition, our team members in recent times have worked internationally in states such as Spain, Malaysia, the United Arab Emirates, Qatar, Saudi Arabia, Portugal, Cyprus, Ireland, China, Barbados, Philippines and Hong Kong.</p>
+                    <div style="color:#ab8d44; font-family:'Segoe UI',Arial,sans-serif; font-size:1.1rem; font-weight:600; letter-spacing:0.04em; text-align:center; margin-top:2.5rem;">
+                        EXAMPLES OF THE CASES IN WHICH MEMBERS OF THE EWING LAW TEAM HAVE TAKEN A LEAD ROLE INCLUDE
+                    </div>
+                    <div class="serious-examples-grid">
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. J.</div>
+                            <div class="serious-example-desc">Acted for a defendant alleged to have been a key part of a conspiracy to gain late-night entry to bank cash machines via the use of explosive gas.</div>
+                            <div class="serious-example-court">BLACKFRIARS CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. T.</div>
+                            <div class="serious-example-desc">Acted the first defendant alleged to have led a conspiracy to disguise high-end vehicles stolen from overseas, to allow for their ‘legal’ resale in the UK.</div>
+                            <div class="serious-example-court">KINGSTON CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. M.</div>
+                            <div class="serious-example-desc">Acted alone for one of 16 defendants alleged to have together controlled the two largest brothels in the North of England. These proceedings never made it to trial, following a successful three-week abuse of process argument that resulted in the judge ruling that it would be ‘unfair to try’ the defendants in light of the previous conduct of the police.</div>
+                            <div class="serious-example-court">SHEFFIELD CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. C.</div>
+                            <div class="serious-example-desc">Defended in a multi-handed trial alleging a major conspiracy to smuggle both tobacco and alcohol.</div>
+                            <div class="serious-example-court">CENTRAL CRIMINAL COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. W.</div>
+                            <div class="serious-example-desc">Acted for one defendant in a multi-handed trial arising from an allegation of conspiracy to import in excess of 2 tonnes of cannabis.</div>
+                            <div class="serious-example-court">WEYMOUTH CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. N.</div>
+                            <div class="serious-example-desc">Represented one defendant in a multi-handed trial arising from the alleged importation of 5 tonnes of cannabis, complicated by competing prosecuting bodies brought about by a parallel allegation of conspiracy to produce false travel documents (passports).</div>
+                            <div class="serious-example-court">SOUTHAMPTON CROWN COURT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expertise-overlay" id="overlay-white-collar">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>White Collar Crime Defence</h1>
+                    <p><strong>Ewing Law is recognised as one of the leading defence firms in the field of white collar crime. With practically every member of the core team having specialised in defending the most complex allegations, together they possess unrivalled experience in every variation of white collar crime, including boiler-room, carousel and ponzi frauds, money laundering, insider trading, bribery and corruption.</strong></p>
+                    <p>Led by Principal Solicitor Scott Ewing – long regarded as the ‘go-to’ lawyer throughout the City of London in respect of fraud allegations and regulatory advice – our lawyers have been instructed in many of the largest, most complicated fraud trials of the past 20 years.</p>
+                    <p>Our team have also been involved in some of the biggest confiscation proceedings brought since the introduction of the Proceeds of Crime Act 2002, where their various successes have left Ewing Law in such demand that we are now often approached to privately undertake POCA proceedings, even when not instructed in the original case.</p>
+                    <div style="color:#ab8d44; font-family:'Segoe UI',Arial,sans-serif; font-size:1.1rem; font-weight:600; letter-spacing:0.04em; text-align:center; margin-top:2.5rem;">
+                        EXAMPLES OF THE CASES IN WHICH MEMBERS OF THE EWING LAW TEAM HAVE TAKEN A LEAD ROLE INCLUDE
+                    </div>
+                    <div class="serious-examples-grid">
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. B.</div>
+                            <div class="serious-example-desc">Represented the alleged controller of a large-scale ‘long firm’ fraud, where the value of the fraud was set at over £500,000. This benefit level was attributed to each defendant. Following legal argument the Defendant – despite his alleged greater role – was ordered to repay £5,000, considerably less than was ordered from each of his co-defendants.<br>Birmingham Crown Court</div>
+                            <div class="serious-example-court">BIRMINGHAM CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. G.</div>
+                            <div class="serious-example-desc">Acted for the Defendant in confiscation proceedings arising from a prosecution in which other lawyers were instructed. The Defendant had pleaded guilty to an allegation of conspiracy to import Class A Drugs, with the Crown alleging that he had benefitted to the amount of £1.5million from his involvement. Following legal argument the Defendant was made subject to a confiscation order that required him to repay £1.<br>Manchester Crown Court</div>
+                            <div class="serious-example-court">MANCHESTER CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. B.</div>
+                            <div class="serious-example-desc">Represented one of a number of Defendants following a plea to what was alleged to be the largest ‘car-ringing’ operation ever investigated in the North of England. The subsequent Proceeds of Crime Act application was – at the time – the largest of its type ever pursued. The Defendant alone was subject to an application well in excess of £1million and, after legal argument, was ultimately ordered to pay less than £8,000.<br>Stoke Crown Court</div>
+                            <div class="serious-example-court">STOKE CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. W.</div>
+                            <div class="serious-example-desc">Acted for the Defendant in confiscation proceedings arising from a prosecution in which other lawyers were instructed. Following conviction for conspiracy to supply Class A Drugs, the Crown sought to confiscate the Defendant’s assets as the proceeds of crime. This was successfully contested on the basis that the Defendant’s assets were in fact the result of his ownership of a string of highly-profitable sado-masochistic ‘dungeons’, and that these could not be seized as the proceeds of crime in the absence of a prosecution for the offence of living off of immoral earnings.<br>Maidstone Crown Court</div>
+                            <div class="serious-example-court">MAIDSTONE CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. WS</div>
+                            <div class="serious-example-desc">Acted for the Defendant in confiscation proceedings arising from a prosecution in which other lawyers were instructed. Confiscation proceedings were stayed in the Crown Court after legal argument on the basis that to proceed with them would be ‘Unfair’. The Department of Work and Pensions sought review of this decision in to the Administrative Court, where the decision of the Crown Court judge was upheld. This remains the first and only case in which an application under the Proceeds of Crime Act have been stayed on the ground that it would be ‘unfair to try’.<br>Croydon Crown Court / Royal Courts of Justice (Queens Bench Division)</div>
+                            <div class="serious-example-court">CROYDON CROWN COURT / ROYAL COURTS OF JUSTICE (QUEENS BENCH DIVISION)</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">R. v. D.</div>
+                            <div class="serious-example-desc">Defended a highly successful wealth management specialist who - separate to his legitimate business - had perpetrated a ‘Ponzi fraud’ by collecting funds in excess of £14,000,000 from investors on the basis that the monies would be kept in a risk free, high-interest account from which regular interest payments would be made, but which funds were in fact used by the defendant for his personal enjoyment.<br>Southwark Crown Court</div>
+                            <div class="serious-example-court">SOUTHWARK CROWN COURT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expertise-overlay" id="overlay-general-crime">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>Private Client – General Crime</h1>
+                    <p style="font-size:2rem; font-family:'Crimson Text',serif; color:#1a3a24; font-weight:400; line-height:1.15; margin-bottom:2rem;">In addition to a wealth of experience defending serious crime and complex fraud, the defence expertise of the Ewing Law team applies equally to cases of general crime, whether tried in the magistrates court or before a jury in the Crown Court. We accept instructions in these types of cases on a private paying basis only.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:0;">Whilst legal aid is generally available for offences of this type (subject to means testing), the rates paid are very low and as such it is extremely difficult to properly prepare such a case to Ewing Law’s exacting standards, and equally difficult to find a suitably able barrister willing to act. Ewing Law will therefore only accept these cases on a private basis, to ensure that our clients are properly represented at every stage and that they enjoy the best possible defence team.</p>
+                </div>
+            </div>
+        </div>
+        <div class="expertise-overlay" id="overlay-motoring-offences">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>Private Client – Motoring Offences</h1>
+                    <p style="font-size:2rem; font-family:'Crimson Text',serif; color:#1a3a24; font-weight:400; line-height:1.15; margin-bottom:2rem;">Ewing Law accepts private instruction to act on behalf of the defence in respect of any and all alleged motoring offences.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">Whilst some build a brand around the concept of loophole defences, at Ewing Law we simply instruct the best, most experienced road-traffic barristers to study every case in detail and identify any technical or procedural defences which may be available. In addition, our specialists will advise fully and realistically on any factual defence advanced by our clients, and we routinely instruct experts in the field of alcoholic dissipation, GATSO (and other speed camera) calibration/accuracy and vehicle performance to challenge the prosecution case.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">Those who bring allegations of road traffic violation to our team can be assured of honest, up-to-date and wholly realistic advice. If there is a factual defence with a reasonable prospect of success, we will tell you. If there is a technical or procedural point to be raised, we will advise you. But if there is no chance of success, or if our client is hoping for a ‘loophole’ which no longer exists, we will advise of this also. At Ewing Law our client is our number one priority, and we have no wish to pursue any case that is not in that client’s interest.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:0;">Due to our policy of offering the utmost discretion to our clients – high-profile or otherwise – we cannot offer a case list in this area of practice.</p>
+                </div>
+            </div>
+        </div>
+        <div class="expertise-overlay" id="overlay-regulatory-discipline">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>Private Client – Regulatory Offences &amp; Discipline</h1>
+                    <p style="font-size:2rem; font-family:'Crimson Text',serif; color:#1a3a24; font-weight:400; line-height:1.15; margin-bottom:2rem;">The Ewing Law team boasts considerable experience in advising and defending in a wide variety of Regulatory matters.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">These have ranged from Health and Safety prosecutions to allegations of Food Standard Agency violations, and to matters brought before the General Medical Council, the Royal Pharmaceutical Society, the General Dental Council and the Financial Conduct Authority.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">In addition to regulatory prosecutions we have for many years represented professional sportsmen and sportswomen before the governing bodies of their chosen sport. This experience has in the main been before the Amateur Boxing Association, The British Boxing Board of Control and the Rugby Football Union and the United Kingdom Anti-Doping Panel, but has also included the Football Association.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:2.5rem;">Ewing Law has defended these matters at all levels, from the Magistrates Court through to the High Court and all the way to the Court of Appeal.</p>
+                    <div style="color:#bfa16a; font-family:'Segoe UI',Arial,sans-serif; font-size:1.1rem; font-weight:600; letter-spacing:0.04em; text-align:center; margin-bottom:0; margin-top:2.5rem;">
+                        EXAMPLES OF THE CASES IN WHICH MEMBERS OF THE EWING LAW TEAM HAVE TAKEN A LEAD ROLE INCLUDE
+                    </div>
+                    <div class="serious-examples-grid">
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">Amateur Boxing Association v J</div>
+                            <div class="serious-example-desc">Acted for the defendant before the Amateur Boxing Association following the suspension of the defendant’s licence to box. The suspension came after an arrest for an allegation of drug dealing, for which Scott Ewing and Tony Wyatt acted as solicitor and barrister respectively, securing an acquittal of the charges. The application for the return of the defendant’s licence was successful, allowing him to compete in the 2012 Olympics where he won a Gold Medal before embarking on a high-profile professional career.</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">Re: British Meat Producers Association</div>
+                            <div class="serious-example-desc">Instructed by the British Meat Producers Association to advise upon the legality or otherwise of the imposition of additional value charges by the Food Standards Agency, a complex enquiry involving consideration of the direct application of European legislation and its correct interpretation.</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">Health &amp; Safety Executive v K.</div>
+                            <div class="serious-example-desc">Acted for the Defendant company accused of having breached its health and safety obligations as a result of the death of an employee who had fallen through the panelled roof of a warehouse whilst in the process of cleaning guttering. It was alleged that proper processes had not been put in place to prevent employee’s act as the deceased had acted, whilst the Defendant company asserted that such processes were in place but had in fact been deliberately ignored/avoided by the deceased prior to his death.</div>
+                            <div class="serious-example-court">KINGS LYNN CROWN COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">Food Standards Agency v P.F.</div>
+                            <div class="serious-example-desc">Represented P.F. in its appeal of the Food Standards Agency’s refusal to grant P.F. – a major livestock ‘production’ facility – full approval to trade following P.F.’s alleged failure to meet the FSA conditions of licence. Following the success of P.F.’s appeal against this decision, the Food Standards Agency opted to prosecute P.F. for a series of alleged breaches of food standards regulations. These allegations became the subject of successful negotiation whereby P.F. maintained its trading rights.</div>
+                            <div class="serious-example-court">COLCHESTER MAGISTRATES COURT</div>
+                        </div>
+                        <div class="serious-example-card">
+                            <div class="serious-example-title">Food Standards Agency v F.</div>
+                            <div class="serious-example-desc">Acted alone on behalf of F. (a major poultry slaughterhouse) in resisting the decision of the Food Standards Agency to close its main plant following failure to achieve ‘full approval’ of its working practices. The outcome of the matter was of particular importance as success for F. would undermine the legality of the policies adopted by the Food Standards Agency. This matter was considered by the Administrative Court in 2011, at which time the approach of the Food Standards Agency to the grant of both conditional and full approval to trade was considered to be unlawful from the Agency’s inception, due to a misapplication of the legislation. ‘The Official Feed and Food Controls (England)(Amendment) Regulations 2011’ have been implemented as a result of this case.</div>
+                            <div class="serious-example-court">ROYAL COURTS OF JUSTICE (QUEENS BENCH DIVISION)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expertise-overlay" id="overlay-advisory">
+            <div class="expertise-overlay-content">
+                <button class="expertise-overlay-close" aria-label="Close overlay">&times;</button>
+                <div class="expertise-overlay-inner">
+                    <h1>Private Client – Advisory Services</h1>
+                    <p style="font-size:2rem; font-family:'Crimson Text',serif; color:#1a3a24; font-weight:400; line-height:1.15; margin-bottom:2rem;">A successful business will seek legal advice before entering into a commercial arrangement or a contract of any sort in order to avoid legal dispute or difficulties at a later stage. The most successful, however, will do the same in respect of whether their proposed actions carry any technical criminal or regulatory breaches.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">As a result of our many years at the very forefront of white collar criminal defence and regulatory law, the Ewing Law team are well versed in the more technical aspects of what can and cannot constitute a ‘fraud’, in both the criminal and civil sense. We are also very aware of what seemingly innocuous actions would amount to a breach of regulatory rules in, for example, the financial sector. This expertise has left us in great demand when it comes to providing preemptory advice to bankers, traders and entrepreneurs, to ensure that their proposed actions or business conduct is both wholly legal and within the bounds of their own regulatory rules.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">Believing strongly than crime prevention is preferable criminal defence, our founder and Principal Solicitor takes the lead with the criminal and regulatory aspect of this advisory service. Over the years Scott’s advice has seen many well known institutions and individuals change their intended courses of conduct to ensure that their actions are sound from both a legally and regulatory position, saving them money and sleepless nights in the process.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:1.5rem;">Ewing Law’s services in this respect are often offered alongside the commercial version of the same from our sister-firm Buks, and are often supported – where requested – by the advice of specialist Queen’s Counsel.</p>
+                    <p style="font-size:1.1rem; color:#1a3a24; font-family:'Segoe UI',Arial,sans-serif; margin-bottom:0;">Our advisory services are offered internationally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="testimonials-label">TESTIMONIALS</div>
+        <h2 class="testimonials-title">Don’t just take our word for it, our clients words speak volumes.</h2>
+        <div class="testimonials-grid">
+            <!-- Testimonial 1: Typewriter + dark spotlight -->
+            <div class="testimonial-card spotlight-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-text typewriter-text spotlight-text" id="testimonial-typewriter-1">
+                    If any client were to come to me and say that they were facing an investigation by the Serious Fraud Office or the National Crime Agency or anyone else, the first and only number I would give them would be the number for Ewing Law. There is no one better; as far as I’m concerned, they are the fourth emergency service’
+                </div>
+                <div class="testimonial-author">KEITH BISHOP, KEITH BISHOP ASSOCIATES PR</div>
+            </div>
+            <!-- Testimonial 2: Typewriter + dark spotlight -->
+            <div class="testimonial-card spotlight-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-text typewriter-text spotlight-text" id="testimonial-typewriter-2">
+                    I have represented high-profile sportsmen and women for my entire professional career. Unfortunately that high-profile can sometimes attract trouble, and when it does I always recommend Scott Ewing and his team at Ewing Law. Over the years they have represented some of the biggest names in Sport, and I have never known any lawyer than consistently performs at such a level.’
+                </div>
+                <div class="testimonial-author">RICHARD MAYNARD, MAYNARD COMMUNICATIONS</div>
+            </div>
+            <!-- Testimonial 3: Typewriter + dark spotlight -->
+            <div class="testimonial-card spotlight-card">
+                <div class="testimonial-quote-mark">“</div>
+                <div class="testimonial-text typewriter-text spotlight-text" id="testimonial-typewriter-3">
+                    In the security industry legal complications are inevitable, whether for our employees or for our clients. When they arise we turn to Ewing Law. There is no one better when it comes to solving a problem quickly and with the least amount of fuss.’
+                </div>
+                <div class="testimonial-author">NOBLE SECURITY</div>
+            </div>
+        </div>
+        <div class="testimonials-more" id="testimonials-more-btn"><span>MORE</span></div>
+    </section>
+
+    <!-- Testimonials Overlay Carousel -->
+    <div class="testimonials-overlay" id="testimonials-overlay">
+      <div class="testimonials-overlay-content">
+        <button class="testimonials-overlay-close" id="testimonials-overlay-close" aria-label="Close overlay">&times;</button>
+        <div class="testimonials-carousel">
+          <button class="testimonial-carousel-prev" id="testimonial-carousel-prev" aria-label="Previous testimonial">&#8592;</button>
+          <div class="testimonial-carousel-slide" id="testimonial-carousel-slide">
+            <!-- Slides will be injected by JS -->
+          </div>
+          <button class="testimonial-carousel-next" id="testimonial-carousel-next" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="qr-contact-section">
+    <div class="qr-contact-label">SCAN TO CONNECT</div>
+    <div class="qr-contact-grid">
+      <div class="qr-contact-card">
+        <img src="Assets/Icons/CallQR.svg" alt="QR code to call us" class="qr-contact-icon">
+        <div class="qr-contact-title">CALL US</div>
+        <div class="qr-contact-desc">
+        Scan to call<br>
+        <a href="tel:02071838838" class="qr-contact-detail">0207 183 8838</a>
+        </div>
+      </div>
+      <div class="qr-contact-card">
+        <img src="Assets/Icons/EmailQR.svg" alt="QR code to email us" class="qr-contact-icon">
+        <div class="qr-contact-title">EMAIL US</div>
+        <div class="qr-contact-desc">
+        Scan to email<br>
+        <a href="mailto:enquiries@ewinglaw.co.uk" class="qr-contact-detail">enquiries@ewinglaw.co.uk</a>
+        </div>
+      </div>
+      <div class="qr-contact-card">
+        <img src="Assets/Icons/LocationQR.svg" alt="QR code for map and directions" class="qr-contact-icon">
+        <div class="qr-contact-title">FIND US</div>
+        <div class="qr-contact-desc">
+        Scan for map<br>
+        <a href="https://maps.google.com/?q=13+Hanover+Square,+W1S+1HN" target="_blank" rel="noopener" class="qr-contact-detail">13 Hanover Square, W1S 1HN</a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="gold-divider"></div>
+    <div class="footer-main">
+        <div class="footer-columns">
+            <div class="footer-col address-col">
+                <div>13 Hanover Square<br>Mayfair<br>London<br>W1S 1HN</div>
+                <div style="margin-top: 1em;">Tel: 0207 183 8838<br>DX: 2316 Victoria</div>
+            </div>
+            <div class="footer-col nav-col">
+                <div onclick="window.location.href='WhatMakesUsUnique.html'" style="cursor:pointer;">What Makes Us Unique</div>
+                <div onclick="window.location.href='OurTeam.html'" style="cursor:pointer;">Our People</div>
+                <div onclick="window.location.href='LatestNews.html'" style="cursor:pointer;">News</div>
+                <div onclick="window.location.href='complaints-proceedure.html'" style="cursor:pointer;">Complaints Procedure</div>
+                <div onclick="window.location.href='Contact.html'" style="cursor:pointer;">Contact Us</div>
+                <div onclick="window.location.href='Supported-Charity.html'" style="cursor:pointer;">Supported Charity</div>
+                <div onclick="window.location.href='blogs.html'" style="cursor:pointer;">Our Blogs</div>
+
+            </div>
+            <div class="footer-col services-col">
+                <div>Services</div>
+                <button class="footer-service-link" data-overlay="serious-complex">Serious/Complex Crime</button>
+                <button class="footer-service-link" data-overlay="white-collar">White Collar Crime</button>
+                <button class="footer-service-link" data-overlay="advisory">Private Client – Advisory</button>
+                <button class="footer-service-link" data-overlay="general-crime">Private Client – General Crime</button>
+                <button class="footer-service-link" data-overlay="motoring-offences">Private Client – Motoring Offences</button>
+                <button class="footer-service-link" data-overlay="regulatory-discipline">Private Client – Regulatory Offences / Discipline</button>
+            </div>
+            <div class="footer-col connect-col">
+                <div class="footer-connect-title">CONNECT WITH US</div>
+                <div class="footer-social-icons">
+                    <a href="https://x.com/EwingLaw1" target="_blank" rel="noopener">
+                        <img src="Assets/Icons/XIcon.svg" alt="Twitter" class="footer-social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/ewing_law/" target="_blank" rel="noopener">
+                        <img src="Assets/Icons/InstaIcon.svg" alt="Instagram" class="footer-social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row footer-regulatory">
+            <!-- Start of SRA Digital Badge code -->
+            <div class="footer-sra-badge">
+                <div>
+                    <iframe frameborder="0" scrolling="no" allowtransparency="true" src="https://cdn.yoshki.com/iframe/55847r.html" style="border:0px; margin:0px; padding:0px; background:transparent; top:0px; left:0px; width:100%; height:100%; position: absolute;"></iframe>
+                </div>
+            </div>
+            <!-- End of SRA Digital Badge code -->
+            <div class="footer-regulatory-text">
+                Ewing Law is a trading name of Ewing Law Ltd, company registration number 08112356, VAT Registration No 305069622, and a body authorised and regulated by the Solicitors Regulation Authority. SRA Number 647691. A list of directors can be inspected at the registered office. We are registered with the Information Commissioners Office our registration number is 3518782.
+            </div>
+        </div>
+        <div class="footer-row footer-bottom">
+            <div class="footer-logo">
+                <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo">
+            </div>
+            <div class="footer-bottom-links">
+                <a href="PrivacyPolicy.html">Privacy Policy & Cookie Notice</a>
+            </div>
+
+            <div class="footer-bottom-links">
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+
+            <div class="footer-credit">
+                Website Designed and Developed by <a href="https://www.plotperfectstudios.co.uk" target="_blank" rel="noopener">Plot Perfect Studios Ltd</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="Assets/JS/index.js"></script>
+</body>
+</html>

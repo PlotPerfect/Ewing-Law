@@ -1,0 +1,161 @@
+body {
+  cursor: url('../Icons/EwingCursor.svg'), auto;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawContactBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.contact-section {
+    max-width: 900px;
+    margin: 4rem auto 3rem auto;
+    background: rgba(1, 39, 14, 0.92);
+    color: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.contact-section h2 {
+    color: #ffe7a0;
+    font-family: 'Crimson Text', serif;
+    font-size: 2.2rem;
+    margin-top: 0;
+    border-bottom: 2px solid #ab8d44;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-section h3, .contact-section h4 {
+    color: #ffe7a0;
+    font-family: 'Crimson Text', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.contact-section h3 {
+    font-size: 1.4rem;
+}
+
+.contact-section h4 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.contact-section p, .contact-section ul {
+    margin-bottom: 1.5rem;
+}
+
+.contact-section ul {
+    margin-left: 1.5rem;
+}
+
+.contact-section li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+    color: #ffe7a0;
+    text-decoration: underline;
+    word-break: break-all;
+    transition: color 0.2s;
+}
+
+.contact-section a:hover {
+    color: #ab8d44;
+}
+
+.contact-map {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(171, 141, 68, 0.18);
+    margin-bottom: 1.5rem;
+    border: 2px solid #ab8d44;
+}
+
+/* Breadcrumbs navigation styling */
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1a3a24;
+  padding: 0.75em 2em 0.75em 2em;
+  margin: 0 0 1.5em 0;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(26,35,64,0.06);
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+}
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-separator {
+  margin: 0 0.5em;
+  color: #b89b5e;
+  font-size: 1.2em;
+}
+.breadcrumb-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+.breadcrumb-current {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumbs a:hover {
+  color: #b89b5e;
+}
+
+
+@media (max-width: 700px) {
+    .contact-section {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        font-size: 1rem;
+    }
+    .contact-section h2 {
+        font-size: 1.3rem;
+    }
+    .contact-section h3 {
+        font-size: 1.1rem;
+    }
+    .contact-map {
+        height: 220px;
+    }
+}

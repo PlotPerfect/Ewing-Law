@@ -1,0 +1,136 @@
+/* Supported Charity Section Styles */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawCharityBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.supported-charity-section {
+  background: #f8f8f5;
+  padding: 3.5rem 0 2.5rem 0;
+  border-top: 2px solid #bfa16a;
+  border-bottom: 2px solid #bfa16a;
+  margin-bottom: 2.5rem;
+}
+
+.supported-charity-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.supported-charity-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.2rem;
+  color: #1a3a24;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.supported-charity-logo-container {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.supported-charity-logo {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.08));
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 2.2rem;
+  box-sizing: border-box;
+}
+
+.supported-charity-description {
+  font-size: 1.15rem;
+  color: #2d2d2d;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-top: 1.2rem;
+  line-height: 1.7;
+}
+
+.supported-charity-description a {
+  color: #bfa16a;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.supported-charity-description a:hover {
+  color: #1a3a24;
+}
+
+/* Charity images row styles */
+.supported-charity-images-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.supported-charity-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 0.5rem;
+  transition: transform 0.18s;
+}
+
+.supported-charity-img:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 4px 18px rgba(191,161,106,0.18);
+}
+
+@media (max-width: 600px) {
+  .supported-charity-logo {
+    max-width: 90vw;
+    padding: 0.7rem 0.5rem;
+  }
+  .supported-charity-inner {
+    padding: 0 0.5rem;
+  }
+  .supported-charity-section {
+    padding: 2rem 0 1.2rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .supported-charity-images-row {
+    gap: 1rem;
+  }
+  .supported-charity-img {
+    max-width: 120px;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .supported-charity-images-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .supported-charity-img {
+    max-width: 95vw;
+  }
+}

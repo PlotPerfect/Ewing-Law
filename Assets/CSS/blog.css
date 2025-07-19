@@ -1,0 +1,109 @@
+/* blog.css - Custom styles for the Blogs section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawBlogsBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.blogs-section {
+  padding: 5%;
+}
+
+.blogs-label {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 2.2rem;
+  color: #1a3a24;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.04em;
+}
+.blogs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.blog-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 rgba(26,58,36,0.08), 0 1.5px 6px 0 rgba(191,161,106,0.10);
+  padding: 2.2rem 2rem 2rem 2rem;
+  max-width: 370px;
+  min-width: 270px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: 1.5px solid #e5e1d8;
+  position: relative;
+}
+.blog-card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 8px 32px 0 rgba(191,161,106,0.13), 0 2px 8px 0 rgba(26,58,36,0.13);
+  border-color: #bfa16a;
+}
+.blog-date {
+  font-size: 1rem;
+  color: #bfa16a;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.blog-title {
+  font-size: 1.35rem;
+  color: #1a3a24;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  line-height: 1.22;
+}
+.blog-summary {
+  font-size: 1.05rem;
+  color: #3d3d3d;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.blog-read-btn {
+  display: inline-block;
+  background: #bfa16a;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px 0 rgba(191,161,106,0.10);
+  transition: background 0.18s, color 0.18s;
+}
+.blog-read-btn:hover {
+  background: #1a3a24;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .blogs-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .blog-card {
+    max-width: 95vw;
+    min-width: 0;
+  }
+}

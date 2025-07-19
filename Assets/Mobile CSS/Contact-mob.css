@@ -1,0 +1,9 @@
+/* Center hero-section h1 and p on mobile */
+@media (max-width: 600px) {
+  .hero-section h1,
+  .hero-section p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

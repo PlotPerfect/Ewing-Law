@@ -1,0 +1,123 @@
+/* Unique styling for the visual sitemap page */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawSitemapBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.sitemap-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(191,161,106,0.07);
+  padding: 2.5rem 2rem;
+}
+.sitemap-title {
+  font-size: 2.1rem;
+  color: #1a3a24;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.sitemap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sitemap-list > li {
+  margin-bottom: 1.1rem;
+  font-size: 1.18rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a3a24;
+}
+.sitemap-list > li > a {
+  color: #1a3a24;
+  text-decoration: none;
+  border-bottom: 2px solid #bfa16a;
+  transition: color 0.2s, border-color 0.2s;
+}
+.sitemap-list > li > a:hover {
+  color: #ab8d44;
+  border-color: #ab8d44;
+}
+.sitemap-list ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+.sitemap-list ul li {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+.sitemap-list ul li a {
+  color: #3d3d3d;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.sitemap-list ul li a:hover {
+  color: #ab8d44;
+}
+
+/* Breadcrumbs navigation styling */
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1a3a24;
+  padding: 0.75em 2em 0.75em 2em;
+  margin: 0 0 1.5em 0;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(26,35,64,0.06);
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+}
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-separator {
+  margin: 0 0.5em;
+  color: #b89b5e;
+  font-size: 1.2em;
+}
+.breadcrumb-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+.breadcrumb-current {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumbs a:hover {
+  color: #b89b5e;
+}

@@ -1,0 +1,119 @@
+/* QR Contact Section Styles */
+.qr-contact-section {
+  background: #fff;
+  padding: 3.5rem 0 2.5rem 0;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.qr-contact-label {
+  color: #ab8d44;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.qr-contact-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 340px;
+}
+.qr-contact-card {
+  background: rgba(171, 141, 68, 0.07);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(26,58,36,0.07);
+  padding: 3.2rem 2.8rem 2.2rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 270px;
+  max-width: 320px;
+  margin-bottom: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-size: 1.18rem;
+}
+.qr-contact-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(171, 141, 68, 0.18);
+  transform: translateY(-6px) scale(1.04);
+}
+.qr-contact-icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.6rem;
+  border-radius: 0.7rem;
+  border: 2.5px solid #1a3a24;
+  background: #fff;
+}
+.qr-contact-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.7rem;
+  color: #1a3a24;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.03em;
+}
+.qr-contact-desc {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.18rem;
+  color: #1a3a24;
+  margin-bottom: 0.3rem;
+}
+.qr-contact-detail {
+  color: #ab8d44;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+@media (max-width: 1200px) {
+  .qr-contact-grid {
+    gap: 2.5rem;
+    max-width: 100vw;
+  }
+  .qr-contact-card {
+    min-width: 200px;
+    max-width: 260px;
+    padding: 2rem 1.2rem 1.2rem 1.2rem;
+  }
+  .qr-contact-icon {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 900px) {
+  .qr-contact-grid {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .qr-contact-card {
+    min-width: 160px;
+    max-width: 320px;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+  }
+  .qr-contact-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .qr-contact-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    min-height: unset;
+  }
+  .qr-contact-card {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+  }
+  .qr-contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,108 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawPoliceBlogBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.blog-hero-section::before,
+.blog-hero-section::after {
+  display: none !important;
+  content: none !important;
+}
+.blog-hero-text {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.blog-title-main {
+  font-size: 2.2rem;
+  color: #1a3a24;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.blog-title-desc {
+  font-size: 1.15rem;
+  color: #3d3d3d;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+.blog-article-section {
+  background: none !important;
+  padding: 2.5rem 0 2rem 0;
+}
+.blog-article-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(191,161,106,0.07);
+  padding: 2.5rem 2rem;
+}
+.blog-article-meta {
+  color: #bfa16a;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.blog-article-title {
+  font-family: 'Crimson Text', serif;
+  color: #1a3a24;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.blog-key-point {
+  background: #f8f6f2;
+  border-left: 4px solid #bfa16a;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #1a3a24;
+}
+.blog-caution {
+  border-left: 4px solid #bfa16a;
+  background: #f8f6f2;
+  padding: 1rem 1.2rem;
+  color: #1a3a24;
+  font-style: italic;
+}
+.blog-support-box {
+  background: #f8f6f2;
+  border-left: 4px solid #bfa16a;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  color: #1a3a24;
+  font-size: 1rem;
+}
+.blog-disclaimer {
+  font-size: 0.98rem;
+  color: #888;
+  margin-top: 2.5rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.2rem;
+}
+@media (max-width: 900px) {
+  .blog-article-container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .blog-title-main {
+    font-size: 1.3rem;
+  }
+  .blog-article-title {
+    font-size: 1.1rem;
+  }
+}

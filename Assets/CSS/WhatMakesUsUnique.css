@@ -1,0 +1,117 @@
+/* WhatMakesUsUnique page custom styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/EwingLawUniqueBG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.unique-main-section {
+  max-width: 1200px;
+  margin: 3rem auto 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.unique-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a3a24;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.unique-main-section p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.25rem;
+  color: #1a3a24;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.unique-main-section p:last-child {
+  margin-bottom: 0;
+}
+
+.unique-main-section a {
+  color: #ab8d44;
+  text-decoration: underline wavy #ab8d44;
+  font-weight: 600;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.unique-main-section a:hover, .unique-main-section a:focus {
+  color: #1a3a24;
+  text-decoration-color: #1a3a24;
+  outline: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1a3a24;
+  padding: 0.75em 2em 0.75em 2em;
+  margin: 0 0 1.5em 0;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(26,35,64,0.06);
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1em;
+}
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-separator {
+  margin: 0 0.5em;
+  color: #b89b5e;
+  font-size: 1.2em;
+}
+.breadcrumb-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+.breadcrumb-current {
+  color: #1a2340;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.breadcrumbs a {
+  color: #1a2340;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumbs a:hover {
+  color: #b89b5e;
+}
+
+@media (max-width: 700px) {
+  .unique-title {
+    font-size: 2rem;
+  }
+  .unique-main-section {
+    padding: 0 0.5rem;
+  }
+  .unique-main-section p {
+    font-size: 1.05rem;
+  }
+}
