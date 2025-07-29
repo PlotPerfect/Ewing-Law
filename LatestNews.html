@@ -20,27 +20,57 @@
     <link rel="icon" type="image/svg+xml" href="Assets/Icons/ELFavicon.svg">
 </head>
 <body>
-    <div id="side-menu" class="side-menu">
-        <nav class="side-menu-nav">
-            <button class="side-menu-btn" onclick="window.location.href='index.html'">Home</button>
-            <button class="side-menu-btn" onclick="window.location.href='WhatMakesUsUnique.html'">What Makes us Unique</button>
-            <button class="side-menu-btn" onclick="window.location.href='index.html#services'">Services</button>
-            <button class="side-menu-btn" onclick="window.location.href='OurTeam.html'">Team</button>
-            <button class="side-menu-btn" onclick="window.location.href='Contact.html'">Contact Us</button>
-            <button class="side-menu-btn" onclick="window.location.href='blogs.html'">Blogs</button>
-        </nav>
-    </div>
     <section class="hero-section">
         <div class="hero-text">
-            <h1>Latest News</h1>
+            <h1>Latest News & Insights</h1>
             <p>
-            Stay updated with the latest news and updates from Ewing Law, a leading law firm based in London. Explore our recent achievements, community involvement, legal insights, and important events that shape our reputation as trusted solicitors in the UK. Our news section covers topics such as criminal defence, regulatory law, private client services, and more, providing valuable information for clients, legal professionals, and anyone interested in the legal sector. Discover how Ewing Law continues to deliver expert legal advice and exceptional client service across London and the UK.
+                Stay up to date with the latest news, events, and updates from Ewing Law. Discover our achievements, community involvement, and legal insights in London and across the UK.
             </p>
         </div>
-        <img src="Assets/Icons/MenuClosed.svg" alt="Menu Closed" id="menu-icon" class="menu-icon">
         <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo" class="ewing-law-logo">
-        <img src="Assets/Icons/ContactIconClosed.svg" alt="Contact Icon Closed" id="contact-icon" class="contact-icon">    
+        <div class="hero-nav-fadein">
+            <nav class="hero-nav-btns-col">
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Home</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='WhatMakesUsUnique.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">About</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='LatestNews.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">News/Insights</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html#services'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Services</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='OurTeam.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Team</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='Contact.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Contact Us</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='FAQs.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">FAQs</span>
+                </button>
+            </nav>
+        </div>
     </section>
+
+            <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html"><img src="Assets/Icons/ELFavicon.svg" alt="Home" class="breadcrumb-icon"> Home</a></li>
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><span class="breadcrumb-current">News & Insights</span></li>
+        </ul>
+    </nav>
+
     <section class="news-section">
         <h2 class="news-title">Latest news and updates from Ewing Law.</h2>
         <div class="news-grid">
@@ -154,6 +184,10 @@
             <div class="footer-bottom-links">
                 <a href="PrivacyPolicy.html">Privacy Policy & Cookie Notice</a>
             </div>
+            <div class="footer-bottom-links">
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+
             <div class="footer-credit">
                 Website Designed and Developed by <a href="https://www.plotperfectstudios.co.uk" target="_blank" rel="noopener">Plot Perfect Studios Ltd</a>
             </div>

@@ -1,0 +1,182 @@
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background: none;
+    background-image: url('../Images/DawnBurrowsTeamBG.svg') !important;
+    background-size: cover;
+    background-position: center;
+    padding: 22rem 0; /* Increase height */
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.hero-nav-btns-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-90%);
+    z-index: 30000;
+    max-width: 340px;
+    width: 100%;
+    padding-left: 2.2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    pointer-events: auto;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.77,0.2,0.05,1.0), transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.08em;
+    box-shadow: none;
+    margin: 0;
+    padding: 0.3rem 1.2rem 0.3rem 0.2rem;
+    border-radius: 0 32px 32px 0;
+    cursor: pointer;
+    overflow: visible;
+    background: none;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero-nav-fadein-btn .gold-vert-line {
+    display: inline-block;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(180deg, #ffe7a0 0%, #ab8d44 100%);
+    margin-right: 1.1rem;
+    border-radius: 2px;
+    transition: height 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    vertical-align: middle;
+    box-shadow: 0 0 6px #ab8d44a0;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible .gold-vert-line {
+    height: 2.1rem;
+}
+.hero-nav-fadein-btn .hero-nav-btn-text {
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: color 0.2s;
+}
+.hero-nav-fadein-btn:hover .hero-nav-btn-text {
+    color: #ffe7a0;
+}
+.hero-nav-fadein-btn:hover .gold-vert-line {
+    box-shadow: 0 0 16px #ffe7a0;
+}
+
+    .team-member-profile {
+        max-width: 900px;
+        margin: 3rem auto 2rem auto;
+        background: #181818e6;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        padding: 2.5rem 2rem;
+        color: #fff;
+        font-family: 'Crimson Text', serif;
+        opacity: 0;
+        transform: translateY(60px);
+        animation: fadeInUpProfile 1.1s cubic-bezier(0.77,0.2,0.05,1.0) 0.2s forwards;
+    }
+    @keyframes fadeInUpProfile {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .team-member-header h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.2em;
+        letter-spacing: 0.04em;
+        color: #ffe7a0;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .team-member-header p {
+        font-size: 1.25rem;
+        color: #ab8d44;
+        margin-bottom: 1.5em;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+    .team-member-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+    }
+    .team-member-photo {
+        width: 220px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px #ab8d44a0;
+        opacity: 0;
+        transform: scale(0.92) translateY(30px);
+        animation: fadeInPhoto 1.1s cubic-bezier(0.77,0.2,0.05,1.0) 0.5s forwards;
+        background: #222;
+    }
+    @keyframes fadeInPhoto {
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+    .team-member-bio {
+        flex: 1;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInBio 1.1s cubic-bezier(0.77,0.2,0.05,1.0) 0.8s forwards;
+    }
+    @keyframes fadeInBio {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .team-member-bio p {
+        font-size: 1.18rem;
+        line-height: 1.7;
+        margin-bottom: 1.1em;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    @media (max-width: 700px) {
+        .team-member-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .team-member-profile {
+            padding: 1.2rem 0.5rem;
+        }
+        .team-member-photo {
+            width: 90vw;
+            max-width: 320px;
+            height: auto;
+        }
+    }

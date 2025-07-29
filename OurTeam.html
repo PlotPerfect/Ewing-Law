@@ -21,30 +21,46 @@
     <link rel="icon" type="image/svg+xml" href="Assets/Icons/ELFavicon.svg">
 </head>
 <body>
-    <div id="side-menu" class="side-menu">
-        <nav class="side-menu-nav">
-            <button class="side-menu-btn" onclick="window.location.href='index.html'">Home</button>
-            <button class="side-menu-btn" onclick="window.location.href='WhatMakesUsUnique.html'">What Makes us Unique</button>
-            <button class="side-menu-btn" onclick="window.location.href='index.html#services'">Services</button>
-            <button class="side-menu-btn" onclick="window.location.href='OurTeam.html'">Team</button>
-            <button class="side-menu-btn" onclick="window.location.href='Contact.html'">Contact Us</button>
-            <button class="side-menu-btn" onclick="window.location.href='blogs.html'">Blogs</button>
-        </nav>
-    </div>
     <section class="hero-section">
         <div class="hero-text">
-            <h1>Our Team of Expert Solicitors & Legal Professionals</h1>
+            <h1>Our Team</h1>
             <p>
-            At Ewing Law, our team is comprised of highly experienced solicitors and legal professionals based in London, dedicated to delivering outstanding legal services across criminal defence, regulatory law, and private client matters. 
-            <br><br>
-            With a reputation for excellence, our lawyers combine deep legal expertise with a client-focused approach, ensuring every client receives tailored advice and robust representation. 
-            <br><br>
-            Discover more about our team’s qualifications, experience, and commitment to achieving the best outcomes for individuals and businesses throughout the UK.
+                Meet the dedicated professionals behind Ewing Law. Our team combines expertise, experience, and a client-focused approach to deliver outstanding legal support across criminal defence, regulatory law, and private client services.
             </p>
         </div>
-        <img src="Assets/Icons/MenuClosed.svg" alt="Menu Closed" id="menu-icon" class="menu-icon">
         <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo" class="ewing-law-logo">
-        <img src="Assets/Icons/ContactIconClosed.svg" alt="Contact Icon Closed" id="contact-icon" class="contact-icon">    
+        <div class="hero-nav-fadein">
+            <nav class="hero-nav-btns-col">
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Home</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='WhatMakesUsUnique.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">About</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='LatestNews.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">News/Insights</span>
+                </button>
+               <button  class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html#services'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Services</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='OurTeam.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Team</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='Contact.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Contact Us</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='FAQs.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">FAQs</span>
+                </button>
+            </nav>
+        </div>
     </section>
     <!-- Breadcrumbs Navigation -->
     <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -55,91 +71,108 @@
         </ul>
     </nav>
     <section class="team-section">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-            <!-- Example team member cards, replace src with your own images -->
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/ScottTeamImage.svg" alt="Team Member 1" class="team-img">
-                </div>
-                <div class="team-name">Scott Ewing</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/TonyTeamImage.svg" alt="Team Member 2" class="team-img">
-                </div>
-                <div class="team-name">Tony Wyatt</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/DawnTeamImage.svg" alt="Team Member 3" class="team-img">
-                </div>
-                <div class="team-name">Dawn Burrows</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/DillonTeamImage.svg" alt="Team Member 4" class="team-img">
-                </div>
-                <div class="team-name">Dillon May</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/RebeccaTeamImage.svg" alt="Team Member 5" class="team-img">
-                </div>
-                <div class="team-name">Rebecca Ireland</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/NicolaTeamImage.svg" alt="Team Member 6" class="team-img">
-                </div>
-                <div class="team-name">Nicola Mitchell</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/RobTeamImage.svg" alt="Team Member 7" class="team-img">
-                </div>
-                <div class="team-name">Rob Bryan</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/VerityTeamImage.svg" alt="Team Member 8" class="team-img">
-                </div>
-                <div class="team-name">Verity Smith</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
-            <div class="team-card">
-                <div class="team-img-wrapper">
-                    <span class="team-glow"></span>
-                    <img src="Assets/Images/team9.jpg" alt="Team Member 9" class="team-img">
-                </div>
-                <div class="team-name">Jacqui Perera</div>
-                <div class="team-role">Role / Title</div>
-                <div class="team-bio">Short bio or quote about this team member. Passionate, experienced, and dedicated.</div>
-            </div>
+    <h2 class="team-title">Meet Our Team</h2>
+    <div class="team-grid-bcl">
+      <!-- Team Member: Scott Ewing -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/ScottTeamImage.svg" alt="Scott Ewing">
         </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Scott Ewing</div>
+          <div class="team-role-bcl">Director & Solicitor Advocate</div>
+          <a href="Assets/Team/scott-ewing.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Tony Wyatt -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/TonyTeamImage.svg" alt="Tony Wyatt">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Tony Wyatt</div>
+          <div class="team-role-bcl">Solicitor Advocate</div>
+          <a href="Assets/Team/tony-wyatt.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Dawn Burrows -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/DawnTeamImage.svg" alt="Dawn Burrows">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Dawn Burrows</div>
+          <div class="team-role-bcl">Practice Manager</div>
+          <a href="Assets/Team/dawn-burrows.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Dillon May -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/DillonTeamImage.svg" alt="Dillon May">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Dillon May</div>
+          <div class="team-role-bcl">Paralegal</div>
+          <a href="Assets/Team/dillon-may.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Rebecca Ireland -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/RebeccaTeamImage.svg" alt="Rebecca Ireland">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Rebecca Ireland</div>
+          <div class="team-role-bcl">Solicitor</div>
+          <a href="Assets/Team/rebecca-ireland.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Nicola Mitchell -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/NicolaTeamImage.svg" alt="Nicola Mitchell">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Nicola Mitchell</div>
+          <div class="team-role-bcl">Solicitor</div>
+          <a href="Assets/Team/nicola-mitchell.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Rob Bryan -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/RobTeamImage.svg" alt="Rob Bryan">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Rob Bryan</div>
+          <div class="team-role-bcl">Consultant</div>
+          <a href="Assets/Team/rob-bryan.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Verity Smith -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/VerityTeamImage.svg" alt="Verity Smith">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Verity Smith</div>
+          <div class="team-role-bcl">Paralegal</div>
+          <a href="Assets/Team/verity-smith.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+      <!-- Team Member: Jacqui Perera -->
+      <div class="team-card-bcl">
+        <div class="team-img-bcl">
+          <img src="Assets/Images/team9.jpg" alt="Jacqui Perera">
+        </div>
+        <div class="team-info-bcl">
+          <div class="team-name-bcl">Jacqui Perera</div>
+          <div class="team-role-bcl">Legal Secretary</div>
+          <a href="Assets/Team/jacqui-perera.html" class="team-profile-btn" tabindex="0">View Profile</a>
+        </div>
+      </div>
+    </div>
     </section>
         <section class="qr-contact-section">
     <div class="qr-contact-label">SCAN TO CONNECT</div>
@@ -227,6 +260,11 @@
             <div class="footer-bottom-links">
                 <a href="PrivacyPolicy.html">Privacy Policy & Cookie Notice</a>
             </div>
+
+         <div class="footer-bottom-links">
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+
             <div class="footer-credit">
                 Website Designed and Developed by <a href="https://www.plotperfectstudios.co.uk" target="_blank" rel="noopener">Plot Perfect Studios Ltd</a>
             </div>

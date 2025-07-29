@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     background: none;
-    background-image: url('../Images/EwingLawUniqueBG.svg');
+    background-image: url('../Images/AboutUsBG.svg');
     background-size: cover;
     background-position: center;
     padding: 22rem 0; /* Increase height */
@@ -16,27 +16,63 @@
     overflow: hidden;
 }
 
+
+.hero-section::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: #ab8d44;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #01270eae; /* Black overlay, slightly opaque */
+    z-index: 1;
+    pointer-events: none;
+}
+
+
 .unique-main-section {
-  max-width: 1200px;
-  margin: 3rem auto 2.5rem auto;
-  padding: 0 1.5rem;
+    background: #01270ed9; /* gold color with opacity */
+    min-height: 820px;
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .unique-title {
   font-family: 'Crimson Text', serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #1a3a24;
-  margin-bottom: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1.1rem;
   line-height: 1.15;
 }
 
 .unique-main-section p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.25rem;
-  color: #1a3a24;
-  margin-bottom: 1.2rem;
+  font-size: 1.00rem;
+  color: #ffffff;
+  margin-bottom: 1.1rem;
   line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 .unique-main-section p:last-child {
@@ -62,8 +98,7 @@
   align-items: center;
   background: #1a3a24;
   padding: 0.75em 2em 0.75em 2em;
-  margin: 0 0 1.5em 0;
-  border-radius: 30px;
+  margin: 0 0 0em 0;
   box-shadow: 0 2px 8px rgba(26,35,64,0.06);
   font-family: 'Crimson Text', serif;
   font-size: 1.1em;
@@ -91,17 +126,91 @@
   vertical-align: middle;
 }
 .breadcrumb-current {
-  color: #1a2340;
+  color: #ffffff;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 .breadcrumbs a {
-  color: #1a2340;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.2s;
 }
 .breadcrumbs a:hover {
   color: #b89b5e;
+}
+
+.hero-nav-btns-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-90%);
+    z-index: 30000;
+    max-width: 340px;
+    width: 100%;
+    padding-left: 2.2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    pointer-events: auto;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.77,0.2,0.05,1.0), transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.08em;
+    box-shadow: none;
+    margin: 0;
+    padding: 0.3rem 1.2rem 0.3rem 0.2rem;
+    border-radius: 0 32px 32px 0;
+    cursor: pointer;
+    overflow: visible;
+    background: none;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero-nav-fadein-btn .gold-vert-line {
+    display: inline-block;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(180deg, #ffe7a0 0%, #ab8d44 100%);
+    margin-right: 1.1rem;
+    border-radius: 2px;
+    transition: height 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    vertical-align: middle;
+    box-shadow: 0 0 6px #ab8d44a0;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible .gold-vert-line {
+    height: 2.1rem;
+}
+.hero-nav-fadein-btn .hero-nav-btn-text {
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: color 0.2s;
+}
+.hero-nav-fadein-btn:hover .hero-nav-btn-text {
+    color: #ffe7a0;
+}
+.hero-nav-fadein-btn:hover .gold-vert-line {
+    box-shadow: 0 0 16px #ffe7a0;
 }
 
 @media (max-width: 700px) {

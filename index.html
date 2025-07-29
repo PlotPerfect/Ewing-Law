@@ -19,25 +19,44 @@
     <meta property="og:image" content="https://www.ewinglaw.co.uk/Assets/Images/Ewing%20Law%20Logo.svg">
 </head>
 <body>
-    <div id="side-menu" class="side-menu">
-        <nav class="side-menu-nav">
-            <button class="side-menu-btn" onclick="window.location.href='index.html'">Home</button>
-            <button class="side-menu-btn" onclick="window.location.href='WhatMakesUsUnique.html'">What Makes us Unique</button>
-            <button class="side-menu-btn" onclick="document.querySelector('.Expertise-Section').scrollIntoView({ behavior: 'smooth' });">Services</button>
-            <button class="side-menu-btn" onclick="window.location.href='OurTeam.html'">Team</button>
-            <button class="side-menu-btn" onclick="window.location.href='Contact.html'">Contact Us</button>
-            <button class="side-menu-btn" onclick="window.location.href='blogs.html'">Blogs</button>
-
-        </nav>
-    </div>
     <section class="hero-section">
-        <div class="hero-text">
+        <div class="hero-text" hidden>
             <h1>A criminal investigation can happen to anyone. When it does it can be life-changing. Ewing Law is dedicated to reducing that burden by providing a committed, experienced and expert team of carefully selected lawyers, all focused on achieving the best possible result.</h1>
             <p>Ewing Law is renowned as a leading private law firm specialising in the defence of serious and complex criminal prosecutions and professional regulation. Based in Westminster, we accept instruction from private clients in all criminal and regulatory matters.</p>
         </div>
-        <img src="Assets/Icons/MenuClosed.svg" alt="Menu Closed" id="menu-icon" class="menu-icon">
         <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo" class="ewing-law-logo">
-        <img src="Assets/Icons/ContactIconClosed.svg" alt="Contact Icon Closed" id="contact-icon" class="contact-icon">    
+        <div class="hero-nav-fadein">
+            <nav class="hero-nav-btns-col">
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Home</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='WhatMakesUsUnique.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">About</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='LatestNews.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">News/Insights</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="document.querySelector('.Expertise-Section').scrollIntoView({ behavior: 'smooth' });">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Services</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='OurTeam.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Team</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='Contact.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Contact Us</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='FAQs.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">FAQs</span>
+                </button>
+            </nav>
+        </div>
     </section>
 
     <div class="unique-btn-container">
@@ -49,6 +68,25 @@
             <img src="Assets/Icons/DownArrowIcon.svg" alt="Scroll Down" class="down-arrow-icon">
         </button>
     </div>
+
+    <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html"><img src="Assets/Icons/ELFavicon.svg" alt="Home" class="breadcrumb-icon"> Home</a></li>
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><a href="WhatMakesUsUnique.html">What Makes Us Unique</a></li>
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><a href="LatestNews.html">News/Insights</a></li>
+
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><a href="OurTeam.html">Team</a></li>
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><span class="breadcrumb-separator">›</span></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+    </nav>
+
     <section class="Expertise-Section next-section">
         <div class="expertise-label">EXPERTISE</div>
         <div class="expertise-main">

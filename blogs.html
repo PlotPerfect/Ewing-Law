@@ -20,26 +20,47 @@
     <meta property="og:image" content="https://www.ewinglaw.co.uk/Assets/Images/Ewing%20Law%20Logo.svg">
 </head>
 <body>
-    <div id="side-menu" class="side-menu">
-        <nav class="side-menu-nav">
-            <button class="side-menu-btn" onclick="window.location.href='index.html'">Home</button>
-            <button class="side-menu-btn" onclick="window.location.href='WhatMakesUsUnique.html'">What Makes us Unique</button>
-            <button class="side-menu-btn" onclick="document.querySelector('.Expertise-Section').scrollIntoView({ behavior: 'smooth' });">Services</button>
-            <button class="side-menu-btn" onclick="window.location.href='OurTeam.html'">Team</button>
-            <button class="side-menu-btn" onclick="window.location.href='Contact.html'">Contact Us</button>
-            <button class="side-menu-btn" onclick="window.location.href='blogs.html'">Blogs</button>
-
-        </nav>
-    </div>
     <section class="hero-section">
         <div class="hero-text">
-            <h1>Latest Insights from Ewing Law</h1>
-            <p>Explore our expert commentary, legal updates, and thought leadership on criminal defence, regulatory law, and private client matters. Stay informed with the latest blogs from our experienced team.</p>
+            <h1>Our Blogs</h1>
+            <p>Explore insights, updates, and expert commentary from the Ewing Law team. Stay informed on legal trends, practical advice, and the latest news in criminal defence, regulatory law, and more.</p>
         </div>
-        <img src="Assets/Icons/MenuClosed.svg" alt="Menu Closed" id="menu-icon" class="menu-icon">
+        
         <img src="Assets/Images/Ewing Law Logo.svg" alt="Ewing Law Logo" class="ewing-law-logo">
-        <img src="Assets/Icons/ContactIconClosed.svg" alt="Contact Icon Closed" id="contact-icon" class="contact-icon">    
+        <div class="hero-nav-fadein">
+            <nav class="hero-nav-btns-col">
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Home</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='WhatMakesUsUnique.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">About</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='LatestNews.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">News/Insights</span>
+                </button>
+               <button  class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='index.html#services'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Services</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='OurTeam.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Team</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='Contact.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">Contact Us</span>
+                </button>
+                <button class="hero-nav-fadein-btn hero-nav-fadein-left" onclick="window.location.href='FAQs.html'">
+                    <span class="gold-vert-line"></span>
+                    <span class="hero-nav-btn-text">FAQs</span>
+                </button>
+            </nav>
+        </div>
     </section>
+
 
     <!-- Blogs Section -->
     <section class="blogs-section">
@@ -124,6 +145,10 @@
             </div>
             <div class="footer-bottom-links">
                 <a href="PrivacyPolicy.html">Privacy Policy & Cookie Notice</a>
+            </div>
+
+            <div class="footer-bottom-links">
+                <a href="sitemap.html">Sitemap</a>
             </div>
             <div class="footer-credit">
                 Website Designed and Developed by <a href="https://www.plotperfectstudios.co.uk" target="_blank" rel="noopener">Plot Perfect Studios Ltd</a>

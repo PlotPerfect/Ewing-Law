@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     background: none;
-    background-image: url('../Images/EwingLawContactBG.svg');
+    background-image: url('../Images/ContactUsBG.svg');
     background-size: cover;
     background-position: center;
     padding: 22rem 0; /* Increase height */
@@ -98,8 +98,7 @@
   align-items: center;
   background: #1a3a24;
   padding: 0.75em 2em 0.75em 2em;
-  margin: 0 0 1.5em 0;
-  border-radius: 30px;
+  margin: 0 0 0em 0;
   box-shadow: 0 2px 8px rgba(26,35,64,0.06);
   font-family: 'Crimson Text', serif;
   font-size: 1.1em;
@@ -140,6 +139,79 @@
   color: #b89b5e;
 }
 
+.hero-nav-btns-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-90%);
+    z-index: 30000;
+    max-width: 340px;
+    width: 100%;
+    padding-left: 2.2vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    pointer-events: auto;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.77,0.2,0.05,1.0), transform 0.8s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.08em;
+    box-shadow: none;
+    margin: 0;
+    padding: 0.3rem 1.2rem 0.3rem 0.2rem;
+    border-radius: 0 32px 32px 0;
+    cursor: pointer;
+    overflow: visible;
+    background: none;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero-nav-fadein-btn .gold-vert-line {
+    display: inline-block;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(180deg, #ffe7a0 0%, #ab8d44 100%);
+    margin-right: 1.1rem;
+    border-radius: 2px;
+    transition: height 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+    vertical-align: middle;
+    box-shadow: 0 0 6px #ab8d44a0;
+}
+.hero-nav-fadein-btn.hero-nav-fadein-left.visible .gold-vert-line {
+    height: 2.1rem;
+}
+.hero-nav-fadein-btn .hero-nav-btn-text {
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: color 0.2s;
+}
+.hero-nav-fadein-btn:hover .hero-nav-btn-text {
+    color: #ffe7a0;
+}
+.hero-nav-fadein-btn:hover .gold-vert-line {
+    box-shadow: 0 0 16px #ffe7a0;
+}
 
 @media (max-width: 700px) {
     .contact-section {

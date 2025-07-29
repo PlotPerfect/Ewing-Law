@@ -1,3 +1,12 @@
+// Fade in hero nav buttons from left with gold line animation
+document.addEventListener('DOMContentLoaded', function() {
+  var navBtns = document.querySelectorAll('.hero-nav-fadein-btn.hero-nav-fadein-left');
+  navBtns.forEach(function(btn, i) {
+    setTimeout(function() {
+      btn.classList.add('visible');
+    }, 200 + i * 120);
+  });
+});
 // Suppress Yoshki SRA badge errors in the console
 window.addEventListener('error', function (e) {
     if (e.message && e.message.includes('hideYoshkiPopups')) {
@@ -6,29 +15,42 @@ window.addEventListener('error', function (e) {
     }
 });
 
-// Toggle menu icon between closed and open
-const menuIcon = document.getElementById('menu-icon');
+
+// Custom menu icon toggling logic
+const menuOpenIcon = document.getElementById('custom-menu-open');
+const menuCloseIcon = document.getElementById('custom-menu-close');
 const sideMenu = document.getElementById('side-menu');
 let menuOpen = false;
 
 function setMenuState(open) {
     menuOpen = open;
-    menuIcon.src = menuOpen ? 'Assets/Icons/MenuOpen.svg' : 'Assets/Icons/MenuClosed.svg';
-    menuIcon.alt = menuOpen ? 'Menu Open' : 'Menu Closed';
     if (menuOpen) {
         sideMenu.classList.add('open');
+        if (menuOpenIcon) menuOpenIcon.style.display = 'none';
+        if (menuCloseIcon) menuCloseIcon.style.display = 'block';
     } else {
         sideMenu.classList.remove('open');
+        if (menuOpenIcon) menuOpenIcon.style.display = 'block';
+        if (menuCloseIcon) menuCloseIcon.style.display = 'none';
     }
 }
 
-menuIcon.addEventListener('click', () => {
-    setMenuState(!menuOpen);
-});
+if (menuOpenIcon) {
+    menuOpenIcon.addEventListener('click', function(e) {
+        e.stopPropagation();
+        setMenuState(true);
+    });
+}
+if (menuCloseIcon) {
+    menuCloseIcon.addEventListener('click', function(e) {
+        e.stopPropagation();
+        setMenuState(false);
+    });
+}
 
 // Optional: close menu if user clicks outside the menu (desktop only)
 document.addEventListener('click', (e) => {
-    if (menuOpen && !sideMenu.contains(e.target) && e.target !== menuIcon) {
+    if (menuOpen && !sideMenu.contains(e.target) && e.target !== menuOpenIcon && e.target !== menuCloseIcon) {
         setMenuState(false);
     }
 });
