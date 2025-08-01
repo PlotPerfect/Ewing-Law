@@ -113,7 +113,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('../Images/EwingLawWatchBG.svg') no-repeat center center fixed;
+    background: url('../Images/ClockFace.svg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -122,7 +122,7 @@ body {
     position: relative;
     width: 100%;
     background: none;
-    background-image: url('../Images/EwingLawMarbleGB.svg');
+    background-image: url('../Images/EwingLawMainBG.svg');
     background-size: cover;
     background-position: center;
     padding: 22rem 0; /* Increase height */
